@@ -1,0 +1,54 @@
+.container {
+  margin: 0 auto;
+  max-width: 2000px;
+  padding: 0 1rem;
+  /* align-items: center; */
+  /* why doesnt this work?  */
+
+}
+
+.responsive-image {
+  max-width: 100%;
+}
+  
+  
+  .tv {
+      position: relative;
+      width: 200px;
+      height: 150px;
+      margin: 20px 0;
+      background: red;
+      border-radius: 50% / 10%;
+      color: white;
+      text-align: center;
+      text-indent: .1em;
+    }
+    .tv:before {
+      content: '';
+      position: absolute;
+      top: 10%;
+      bottom: 10%;
+      right: -5%;
+      left: -5%;
+      background: inherit;
+      border-radius: 5% / 50%;
+    }
+
+    @media screen and (min-width: 600px){
+      .grid {
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: row; 
+       justify-content: center;
+      }
+      .cell {
+        width: 50%;
+      }
+    }
+    
+    @media screen and (min-width: 1000px){
+      .cell {
+        width: calc(100%/9);
+      }
+    }
+  
