@@ -2,117 +2,103 @@
   margin: 0 auto;
   max-width: 2000px;
   padding:  5rem;
-
-
 }
 
 .responsive-image {
   max-width: 100%;
 }
   
-  
-  .tv {
-      position: relative;
-      width: 200px;
-      height: 200px;
-      margin: 20px 0;
-      background-image:url(./public/cass.png);
-      background-size: 250px 250px, cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      border-radius: 50% / 10%;
-      color: white;
-      text-align: center;
-      text-indent: .1em;
-    }
-    .tv:before {
-      content: '';
-      position: absolute;
-      top: 10%;
-      bottom: 10%;
-      right: -5%;
-      left: -5%;
-      background: inherit;
-      border-radius: 5% / 50%;
-    }
+.tv {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 20px 0;
+    background-image:url(./public/cass.png);
+    background-size: 250px 250px, cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50% / 10%;
+    color: white;
+    text-align: center;
+    text-indent: .1em;
+  }
 
-    .tv {
-      margin: 1rem;
-    }
+.tv:before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: -5%;
+  left: -5%;
+  background: inherit;
+  border-radius: 5% / 50%;
+}
 
-    .tv:hover{
-  
-      animation: animate .2s linear infinite;
-      
-    }
+.tv {
+  margin: 1rem;
+  transition: transform 10s;
+}
 
-    @keyframes animate {
-  0%
-	{
-		background-position: 0 0;
-		filter: hue-rotate(0deg);
-	}
-	10%
-	{
-		background-position: 5px 0;
-	}
-	20%
-	{
-		background-position: -5px 0;
-	}
-	30%
-	{
-		background-position: 15px 0;
-	}
-	40%
-	{
-		background-position: -5px 0;
-	}
-	50%
-	{
-		background-position: -25px 0;
-	}
-	60%
-	{
-		background-position: -50px 0;
-	}
-	70%
-	{
-		background-position: 0 -20px;
-	}
-	80%
-	{
-		background-position: -60px -20px;
-	}
-	81%
-	{
-		background-position: 0 0;
-	}
-	100%
-	{
-		background-position: 0 0;
-		filter: hue-rotate(360deg);
-	}
-    }
+.tv:hover{
+  animation: animate .2s linear infinite;
+}
 
-  
+@keyframes animate {
+0%
+{
+  background-position: 0 0;
+  filter: hue-rotate(0deg);
+}
+10%
+{
+  background-position: 5px 0;
+}
+20%
+{
+  background-position: -5px 0;
+}
+30%
+{
+  background-position: 15px 0;
+}
+40%
+{
+  background-position: -5px 0;
+}
+50%
+{
+  background-position: -25px 0;
+}
+60%
+{
+  background-position: -50px 0;
+}
+70%
+{
+  background-position: 0 -20px;
+}
+80%
+{
+  background-position: -60px -20px;
+}
+81%
+{
+  background-position: 0 0;
+}
+100%
+{
+  background-position: 0 0;
+  filter: hue-rotate(360deg);
+}
+}
 
-
-    @media screen and (min-width: 600px){
-      .grid {
-       display: flex;
-       flex-wrap: wrap;
-       flex-direction: row; 
-       justify-content: center;
-      }
-      .cell {
-        width: 50%;
-      }
-    }
-    
-    @media screen and (min-width: 1000px){
-      .cell {
-        width: calc(100%/4);
-      }
-    }
-  
+@media screen and (min-width: 600px){
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    justify-content: center;
+    transition: transform 10s;
+    transition: width 1s, right 1s, top 1s, left 1s, margin 1s ;
+  }
+}
