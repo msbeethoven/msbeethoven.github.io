@@ -102,3 +102,17 @@
     transition: width 1s, right 1s, top 1s, left 1s, margin 1s ;
   }
 }
+
+.clickBox {
+  visibility: hidden;
+  position: absolute;
+  width: 25vw;
+  color: #d33682;
+  background-color: rgba(38, 138, 210, 0.75);
+  
+  font-family: 'Courier New', Courier, monospace;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
