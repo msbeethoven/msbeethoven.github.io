@@ -2,6 +2,8 @@
   margin: 0 auto;
   max-width: 2000px;
   padding:  5rem;
+  filter: grayscale(20%);
+  background-color: #002b36;
 }
 
 .responsive-image {
@@ -100,6 +102,7 @@
     justify-content: center;
     transition: transform 10s;
     transition: width 1s, right 1s, top 1s, left 1s, margin 1s ;
+    background-color: #002b36;
   }
 }
 

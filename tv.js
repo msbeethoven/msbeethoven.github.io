@@ -8,9 +8,8 @@ function closeAllProjects(className){
 
 //this dynamically closes the modals, regardless of which one you press
 let x = document.getElementsByClassName('close')
-function closeOneProject (htmlCol){
-    for (let i=0; i<htmlCol.length; i++){
-      console.log('lenght', htmlCol.length)
+function closeOneProject (htmlElem){
+    for (let i = 0; i < htmlElem.length; i++){
         document.addEventListener('click', (e) => {
             let parentElmId = e.srcElement.offsetParent.id
             document.getElementById(parentElmId).style.visibility = 'hidden';
@@ -19,12 +18,6 @@ function closeOneProject (htmlCol){
 }
 
 closeOneProject(x);
-
-
-
-
-
-
 
 
 // let clickBox = document.getElementById('lucentInfo')
