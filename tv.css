@@ -1,9 +1,12 @@
+html {
+  background-color: #002b36;
+  
+}
 .container {
   margin: 0 auto;
   max-width: 2000px;
-  padding:  5rem;
+  padding: 5rem;
   filter: grayscale(20%);
-  background-color: #002b36;
 }
 
 .responsive-image {
@@ -101,21 +104,19 @@
     flex-direction: row; 
     justify-content: center;
     transition: transform 10s;
-    transition: width 1s, right 1s, top 1s, left 1s, margin 1s ;
-    background-color: #002b36;
+    transition: width 1s, right 1s, top 1s, left 1s, margin 1s;
   }
 }
 
 .clickBox {
   visibility: hidden;
-  position: absolute;
+  position: fixed;
   width: 25vw;
   color: #d33682;
   background-color: rgba(38, 138, 210, 0.75);
-  
   font-family: 'Courier New', Courier, monospace;
-
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  
 }
