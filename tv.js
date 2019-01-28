@@ -85,3 +85,10 @@ newyorkonion.addEventListener('click', () => {
   newyorkonionInfo.style.visibility = 'visible';
 })
 
+let sweetdigs = document.getElementById('sweetdigs');
+sweetdigs.addEventListener('click', () => {
+  closeAllProjects('clickBox');
+  let sweetdigsInfo = document.getElementById('sweetdigsInfo');
+  sweetdigsInfo.style.visibility = 'visible';
+})
+

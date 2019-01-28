@@ -112,6 +112,7 @@ html {
 
 .summary {
   color: #93a1a1;
+  word-wrap: break-word;
 }
 
 .link {
