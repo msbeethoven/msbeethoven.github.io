@@ -53,8 +53,8 @@ html {
     transform: scale(1.1);
   }
   75% {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
   }
 }
 @keyframes tv {
