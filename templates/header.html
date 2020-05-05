@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <header>
+    <div className="container">
+      <ul class="menu">
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="container">
+    {%block bananas%}
+    {%endblock%}
+  </div>
+</body>
+
+</html>
