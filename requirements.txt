@@ -21,7 +21,6 @@ lazy-object-proxy==1.4.3
 MarkupSafe==1.1.0
 mccabe==0.6.1
 pathlib2==2.3.5
-pylint==1.9.5
 requests==2.22.0
 scandir==1.10.0
 singledispatch==3.4.0.3
