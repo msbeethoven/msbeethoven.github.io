@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> S E O R I </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+</style>
+
+<body>
+  <header>
+    <div class="container">
+
+      <ul class="menu">
+
+        <div class="hover">
+          <li class="neon"><a class="neon-link" href="{{ url_for('home') }}"> <span class="flicker-slow">ho</span>m<span
+                class="flicker-fast">e </a> </li>
+        </div>
+
+        <div class="hover">
+          <li class="neon-blue"><a class="neon-link" href="{{ url_for('about') }}"> <span
+                class="flicker-fast">a</span><span class="flicker-fast">b</span><span
+                class="flicker-slow">ou</span><span class="flicker-fast">t</a> </li>
+        </div>
+      </ul>
+    </div>
+  </header>
+  <div class="container">
+    {%block bananas%}
+    {%endblock%}
+  </div>
+</body>
+
+</html>

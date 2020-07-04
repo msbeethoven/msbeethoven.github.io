@@ -1,0 +1,166 @@
+{%extends "header.html"%}
+{%block bananas%}
+
+<div class="content-wrapper">
+  <div class="intro">
+    <div class="content">
+      <p class="project-title"> turning off the screen</p>
+
+      <p class="project-title">Why bother?</p>
+
+      <p> Gone Home's modification came out of a need to address the inaccessibility of mainstream gaming for visual
+        impaired players. Starting out as a thesis project for NYU Music Tech's thesis requirement the mod has evolved
+        into more than just Gone Home, but into a greater independent initiative for blind called Turning Off the
+        Screen. </p>
+
+        <img alt="Turning off the screen logo" title="Turning off the screen logo" src="{{url_for('static', filename='images/logo.png')}}" width="370" height="80"/>
+
+      <p> Back in early 2015 when it came time to pick a thesis topic, I knew I wanted to do something with game audio.
+        The
+        procedural nature of game audio makes it an extremely engaging medium to work with, from sound design to
+        implementation to gameplay. However, game audio in of itself is such a mammoth to conquer-- there is no way to
+        effectively become an expert in all of it in one master's thesis. While the exact inspirational moment remains a
+        nebulous mystery, I recall encountering relatively young blind pedestrians many times and curiously wondered,
+        'How
+        would they play digital games? Does this art form that I love provide them with the same amount of entertainment
+        and storytelling as it does for me? Are games a problem for some people?'</p>
+
+      <p class="project-title"> The Problem </p>
+
+      <img alt="In-engine render of front porch" title="In-engine render of front porch" src="{{url_for('static', filename='images/porch.png')}}" width="370" height="200" />
+
+      <p> As it turns out, most games are. With the exception of audio-based games, many of which served as the
+        inspiration
+        for this project, the realm of digital games is inherently visual. The point of this project isn't to shame that
+        implicit design model because the fact of the matter is is that a big portion of mainstream audiences are
+        sighted.
+        It is here that some of the most revolutionary visuals have evolved beyond our wildest imaginations. This
+        discovery is a call to include more user-experience (UX) and user-interface (UI) elements that elevate game
+        audio's role from being purely ornamental in purpose. Two major problems stem from this lack of inclusion:
+        <ol>
+          <li>
+            <p>
+              Crudely put, developers lose out on potential revenue. When a percentage of players that could have
+              enjoyed
+              your game can not access it, there is a loss of exposure and therefore, a loss of profit. </p>
+          </li>
+
+          <li>
+            <p>
+              When games, which are such a huge force in entertainment, ignore a huge population of a potential
+              audience,
+              the
+              message is "this is not for you". While blind-only tech has made leaps and bounds over the years in terms
+              of
+              progress, blind tech shouldn't be restricted to just bio-medical purposes. The human experience transcends
+              mere
+              survival; forms of entertainment, especially games, expose us to new viewpoints, narratives, stories, and
+              connects
+              us to others through the form of characters or fans. </p>
+          </li>
+        </ol>
+      </p>
+
+      <p class="project-title">Why Gone Home?</p>
+
+      <p> Gone Home is a first person adventure exploratory game in which the player embodies Kaitlin Greenbriar, the
+        protagonist who comes home after a semester abroad to an empty house. Upon this unsettling discovery, it is up
+        the
+        player to piece together the past in order to understand what has happened to her family in the present day.</p>
+
+
+      <p> Critically acclaimed and well-known throughout the indie gaming community, I thought that in order to tackle
+        the
+        crux of the issue of blind accessibility, it was best to approach a game that had a built in audience and had
+        simplistic game mechanics; walking and basic interaction with specific environmental clues. From a technical
+        standpoint, I could focus more on audio implementation without worrying about an onslaught of complex audio,
+        such
+        as bullets or even footsteps since the floor remains the same textures in this level, and I would be able to
+        showcase this project without the hurdle of coming up with a story and the issues that come with designing game
+        play and mechanics around it. The game was also built in Unity, a game engine that I was already familiar with.
+      </p>
+
+      <img alt="Fullbright's Gone Home menu screen" title="Fullbright's Gone Home menu screen" src="{{url_for('static', filename='images/gone_home.png')}}"width="370" height="200" />
+
+      <p class="project-title"> Prototyping </p>
+
+      <img alt="Sketch one of front porch" title="Sketch one of front porch" src="{{url_for('static', filename='images/sketch_1.png')}}" align="middle" />
+      <img alt="Sketch two of front porch" title="Sketch two of front porch" src="{{url_for('static', filename='images/sketch_2.png')}}" align="middle" />
+
+      <p> After building the initial the environment, I moved onto working on the actual game mechanics. I initially
+        stuck
+        as close to the original character game mechanic as possible. This entailed basic first person movement, where
+        WASD or the arrow keys corresponded with desired player directions. I quickly ran into my first issues here.
+        Lesson number 2 was that audio became the visuals -- players couldn't see obstacles and assumptions on the
+        developer's end (me) led to frustrations. Casual player testing also determined that the current first person
+        game
+        play did not provide enough aural cues. Lesson number 3: deviating from the original material can be
+        advantageous
+        for accessibility. This realization spawned the addition of white cane asset that was attached to the
+        character's
+        body in order to roughly replicate the real life experience of a blind person using a white stick to maneuver.
+      </p>
+
+      <img alt="In-engine render, player white cane highlighted" title="In-engine render, player white cane highlighted" src="{{url_for('static', filename='images/white_cane.png')}}" width="370" height="200" />
+
+      <p class="project-title"> Conclusions? And what now? </p>
+
+      <p> While it'd be foolish to have one definite conclusion at the beginning stages of this journey, I came to a few
+        big ones:
+          
+        <ul>
+
+          <li> <p>When creating content for visually impaired players, keep pushing the boundaries of sounds. This doesn't
+            necessarily mean cramming in sounds to the point of overwhelming the player. Play around with localization,
+            voiceover, and using key sound effects to ground the player. </p> </li>
+
+          <li> <p> Constant player feedback is key, especially when creating for an experience you are not familiar with.
+            This was a
+            challenge because unfortunately I did not have a network of visually impaired players when I first started
+            this
+            project and relied a lot on one friend and colleague. However, I slowly and am still building that network.
+          </p>
+          </li>
+
+          <li> <p>Enough player feedback will start to contradict each other. When showcasing Gone Home mod at IndieCade LA
+            and user
+            testing afterwards, a lot of player suggestions started to clash, creating a bit of hesitation in which
+            direction
+            to go in for certain issues. There needs to be a balance between developer discretion and player opinion.
+          </p>
+          </li>
+
+          <li> <p>While the theories of accessibility were simple, the execution was labor intensive. In an era where game
+            creation
+            tools are free and devs can create an awesome game from zero knowledge and zero dollars, it's unfair to pin
+            the
+            entirety of the blame on creators. I find that if game engines themselves had accessibility tools built in,
+            a
+            whole slew of blind-friendly games that aren't necessarily audio-only would crop up. Because free heavy duty
+            engines such as Unity and Unreal follow the triple-A industry model of optimization, perhaps triple-A game
+            engine
+            engineers could invest time and money in creating those tools. </p> </li>
+
+          <li> <p> I still do not have all the answers. While I have learned an invaluable amount from when I started, there
+            are
+            still so many unanswered questions, paths that could have and can be taken, technical questions, and
+            mistakes
+            made. There are so many factors as to why this is, me being a sighted developer being a big one, but they
+            were all
+            valuable lessons that have beneficially shaped this project. </p> </li>
+
+        </ul>
+
+        <img alt="Screenshot of Gone Home front porch" title="Screenshot of Gone Home front porch" src="{{url_for('static', filename='images/beginning_scene.png')}}" width="370" height="200" />
+
+        <p> Due to the closed-source nature of Gone Home, the Gone Home mod has been finished for awhile. However, I now carry the philosophies and principles learned with me. Since my focus has shifted to more web-based applications, I try to follow guidelines laid out by standard web accessibility protocol, like the ones listed on w3.org. When it comes to personal gaming projects, without the time constraint of a game jam, these are crucial components that will need to be incorporated into early development. </p>
+
+      <p class="project-title"> Video of Demo </p>
+      <iframe title="vimeo-player" src="https://player.vimeo.com/video/165416692" width="370" height="200"
+        frameborder="0" allowfullscreen></iframe>
+        <p></p>
+    </div>
+  </div>
+</div>
+
+{%endblock%}

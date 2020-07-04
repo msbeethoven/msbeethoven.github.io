@@ -1,0 +1,20 @@
+{%extends "header.html"%}
+{%block bananas%}
+
+<title>{{title}}</title>
+<div class="content-wrapper">
+  <div class="content">
+    <ul class="project-list">
+      <li>[2020] <a class="link-item" href="{{ url_for('cashmaundy') }}">  cash maundy </a> </li>
+      <li>[2019] <a class="link-item" href="{{ url_for('maybe') }}"> maybe it's nyc </a> </li>
+      <li>[2019] <a class="link-item" href="{{ url_for('sweetdigs') }}"> sweet digs </a> </li>
+      <li>[2019] <a class="link-item" href="{{ url_for('codingismagic') }}"> coding is magic </a> </li>
+      <li>[2019] <a class="link-item" href="{{ url_for('rocksforshale') }}"> rocks for shale </a> </li>
+      <li>[2018] <a class="link-item" href="{{ url_for('thoughtsandprayers') }}"> thoughts and prayers </a> </li>
+      <li>[2015] <a class="link-item" href="{{ url_for('turningoffthescreen') }}"> turning off the screen </a> </li>
+      <li>[2013] <a class="link-item" href="{{ url_for('kulak') }}"> kulak </a> </li>
+    </ul>
+  </div>
+</div>
+
+{%endblock bananas%}
