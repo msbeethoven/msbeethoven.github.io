@@ -1,5 +1,5 @@
 .vscode
 /virtual
-Procfile
-requirements.txt
-runtime.txt
+/Procfile
+/requirements.txt
+/runtime.txt
