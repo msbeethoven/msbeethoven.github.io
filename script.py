@@ -10,6 +10,10 @@ def home():
 def about():
   return render_template("about.html", title="seori")
 
+@app.route('/luke')
+def luke():
+  return render_template("luke.html", title="luke electric")
+
 @app.route('/cashmaundy')
 def cashmaundy():
   return render_template("cashmaundy.html", title="cash maundy")
