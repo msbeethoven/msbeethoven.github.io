@@ -1,0 +1,19 @@
+{%extends "header.html"%}
+{%block bananas%}
+
+<title>{{title}}</title>
+  <div class="content-wrapper">
+    <div class="intro">
+        <div class="content">
+            <p class="project-title"> sweet digs</p>
+            <p> Escape the encroaching Enviromulcher and build a new home! But home is where your stuff is, so grab as many of your hats as you can to your new home. </p>
+            <p> Created with Unity game engine for the 2019 Global Game Jam. </p>
+            <a href="{{ url_for('sweetdigsgame') }}" target="_blank">Sweetdigs web player game </a>
+            <p></p>
+            <a href="https://pasty.itch.io/sweet-digs" target="_blank">Sweetdigs on itch.io </a>
+            <p></p>
+            <a href="https://github.com/dornad/gamejam" target="_blank">Source code </a>
+          </div>
+    </div>
+  </div>
+  {%endblock%}
