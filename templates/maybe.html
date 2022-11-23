@@ -1,0 +1,24 @@
+{%extends "header.html"%}
+{%block bananas%}
+
+  <div class="content-wrapper">
+    <div class="intro">
+        <div class="content">
+            <p class="project-title"> maybe it's NYC </p>
+            <p> Maybe It’s NYC is a concept iOS game simulation-runner hybrid in which players can experience the addictive pull of living in New York City through the lens of a working woman. </p>
+            <p> Created with Unity game engine for the Maybelline Game Jam, sponsored by Playcrafting NYC. </p>
+            <p> Created by Rogue Fong, Laura Gatti, Katalina Park, Seori Sachs (Unity dev). </p> 
+            <p></p> 
+            <video width="320" height="240" controls >
+              <source src={{ url_for('static', filename="images/maybe.mp4") }} type="video/mp4">
+            </video>
+            <p></p>
+            <a href="https://github.com/msbeethoven/MNYGJ/tree/master/MNYGJ" target="_blank"> Source code</a> 
+          </div>
+    </div>
+  </div>
+
+
+
+
+{%endblock%}
