@@ -1,25 +1,19 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | GGJ2019</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/SweetDigsBuild.json", {onProgress: UnityProgress});
-    </script>
-  </head>
-  <body>
-    <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">GGJ2019</div>
-      </div>
+{%extends "header.html"%}
+{%block bananas%}
+
+<title>{{title}}</title>
+  <div class="content-wrapper">
+    <div class="intro">
+        <div class="content">
+            <p class="project-title"> sweet digs</p>
+            <p> Escape the encroaching Enviromulcher and build a new home! But home is where your stuff is, so grab as many of your hats as you can to your new home. </p>
+            <p> Created with Unity game engine for the 2019 Global Game Jam. </p>
+            <a href="{{ url_for('sweetdigsgame') }}" target="_blank">Sweetdigs web player game </a>
+            <p></p>
+            <a href="https://pasty.itch.io/sweet-digs" target="_blank">Sweetdigs on itch.io </a>
+            <p></p>
+            <a href="https://github.com/dornad/gamejam" target="_blank">Source code </a>
+          </div>
     </div>
-  </body>
-</html>
+  </div>
+  {%endblock%}

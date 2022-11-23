@@ -1,139 +1,21 @@
-<!DOCTYPE <!DOCTYPE html>
+{%extends "header.html"%}
+{%block bananas%}
 
-<html>
-
-<head>
-  <title>too many of us!</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-slace=1" />
-  <link href="tv.css" type="text/css" rel="stylesheet" />
-</head>
-
-<body>
-  <div class="container">
-
-    <div class="grid">
-      <!-- cass box without inline formating  -->
-
-      <div class="tv" id="codingismagic"> </div>
-
-      
-        <div class="tv" id="turningoffthescreen" style="background-image:url(./public/turningoffthescreen.png); background-size: 250px 250px, cover; background-repeat: no-repeat; background-position: center">
-
-        </div>
-      
-
-      <div class="tv" id="rocks4shale" style="background-image:url(./public/rocks4shale.png); background-size: 250px 250px, cover; background-repeat: no-repeat; background-position: center">
-
-      </div>
-
-
-      <div class="tv" id="lucent" style="background-image:url(./public/lucent.gif); background-size: 250px 250px, cover; background-repeat: no-repeat; background-position: center">`
-      </div>
-
-
-
-      <div class="tv" id="kulak" style="background-image:url(./public/kulak.png); background-size: 270px 270px, cover; background-repeat: no-repeat; background-position: center">
-      </div>
-
-
-
-      <div class="tv" id="dontdelete" style="background-image:url(./public/dontdelete.png); background-size: 250px 250px, cover; background-repeat: no-repeat; background-position: center">
-
-      </div>
-
-
-      
-        <div class="tv" id="thoughtsandprayers" style="background-image:url(./public/thoughtsandprayers.png); background-size: 250px 250px, cover; background-repeat: no-repeat; background-position: center">
-        </div>
-      
-        <div class="tv" id="newyorkonion" style="background-image:url(./public/newyorkonion.jpg); background-size: 250px 250px, cover; background-repeat: no-repeat; background-position: center">
-        </div>
-
-        <div class="tv" id="sweetdigs" style="background-image:url(./public/sweetdigs.png); background-size: 250px 250px, cover; background-repeat: no-repeat; background-position: center">
-        </div>
-
-    </div>
-
+<title>{{title}}</title>
+<div class="content-wrapper">
+  <div class="content">
+    <ul class="project-list">
+      <li>[2021] <a class="link-item" href="{{ url_for('luke') }}">  luke electric </a> </li>
+      <li>[2020] <a class="link-item" href="{{ url_for('cashmaundy') }}">  cash maundy </a> </li>
+      <li>[2019] <a class="link-item" href="{{ url_for('maybe') }}"> maybe it's nyc </a> </li>
+      <li>[2019] <a class="link-item" href="{{ url_for('sweetdigs') }}"> sweet digs </a> </li>
+      <li>[2019] <a class="link-item" href="{{ url_for('codingismagic') }}"> coding is magic </a> </li>
+      <li>[2019] <a class="link-item" href="{{ url_for('rocksforshale') }}"> rocks for shale </a> </li>
+      <li>[2018] <a class="link-item" href="{{ url_for('thoughtsandprayers') }}"> thoughts and prayers </a> </li>
+      <li>[2015] <a class="link-item" href="{{ url_for('turningoffthescreen') }}"> turning off the screen </a> </li>
+      <li>[2013] <a class="link-item" href="{{ url_for('kulak') }}"> kulak </a> </li>
+    </ul>
   </div>
-
-  <div class="clickBox" id="codingismagicInfo">
-    <h2>Coding is Magic</h2>
-    <p class="summary">Educational game targeted at young beginners, where players learn basic computer programming paradigms using a visual coding language. </p>
-    <p class="close">x</p>
-    <a class="link" href="https://coding-is-magic.firebaseapp.com/" target="_blank">Website</a>
-    <a class="link" href="https://github.com/gh1809-coding-is-magic/coding-is-magic" target="_blank">Github</a>
-    <a class="link" href="https://www.youtube.com/watch?list=PLx0iOsdUOUmmMdgcWgABSEBRkSWAG3aNP&v=FIMx_guiMCY" target="_blank">Watch
-      Our Talk!</a>
-  </div>
-
-  <div class="clickBox" id="turningOffInfo">
-      <h2>Turning Off the Screen</h2>
-      <p class="summary">Accessibility mod of Fulbright's <i>Gone Home</i> targetting visually impaired players.</p>
-      <p class="close">x</p>
-      <a class="link" href="https://www.seoris.com/gone-home" target="_blank">Overview</a>
-      <a class="link" href="https://github.com/msbeethoven/GHstart" target="_blank">Github</a>
-    </div>
-
-  <div class="clickBox" id="rocks4shaleInfo">
-      <h2>Rocks 4 Shale</h2>
-      <p class="summary">Psuedo e-commerce site where users can buy construction site materials.</p>
-      <p class="close">x</p>
-      <a class="link" href="https://rocks-4-shale.herokuapp.com/" target="_blank">Website</a>
-      <a class="link" href="https://github.com/Rocks4Shale/Rocks4ShaleGS/" target="_blank">Github</a>
-  </div>
-
-
-  <div class="clickBox" id="lucentInfo">
-    <h2>Lucent</h2>
-    <p class="summary">Lucent is a simple yet surrealist exploratory game built during the Gamerella X Game Jam 2014.</p>
-    <a class="link" href="https://irimaya.itch.io/lucent" target="_blank">Itch.io Download</a>
-    <p class="close">x</p>
-  </div>
-
-  <div class="clickBox" id="kulakInfo">
-      <h2>Kulak</h2>
-      <p class="summary">Kulak is a tabletop game of chance and politics in which 4 or 5 players fight and negotiate over land. Each round pits a wealthy Baron against a group of Proletarians, who must decide if they will stand together or secretly join the Baron. IndieCade finalist 2013.</p>
-      <a class="link" href="https://komradestudios.itch.io/kulak" target="_blank">Itch.io Download</a>
-      <a class="link" href="https://indiecade.tumblr.com/post/61684037725/indiecade-nominee-highlight-kulak-by-comrade" target="_blank">Indiecade Mention</a>
-      <p class="close">x</p>
-  </div>
-
-  <div class="clickBox" id="dontdeleteInfo">
-      <h2>Don't Delete: Repetition in Markov Chains</h2>
-      <p class="summary">Some thoughts about Markov chains and when it's good to be wet. </p>
-      <a class="link" href="https://www.seoris.com/single-post/2018/11/18/The-Beauty-of-Repetition-in-Markov-Chains" target="_blank">Blog</a>
-      <p class="close">x</p>
-  </div>
-
-  <div class="clickBox" id="thoughtsandprayersInfo">
-      <h2>Thoughts and Prayers</h2>
-      <p class="summary">.Thoughts and Prayers is the marriage of the ad-lib nature of Twitter statements and a reflection on the ease of creating sentiment in response to complex events. Presented at Creative Coding NYC. Created with Processing and spaCy.</p>
-      <a class="link" href="https://www.openprocessing.org/sketch/528377" target="_blank">Play</a>
-      <a class="link" href="https://www.youtube.com/watch?v=mWtNtvcDF4A" target="_blank">Watch My Talk</a>
-      <p class="close">x</p>
-  </div>
-
-  <div class="clickBox" id="newyorkonionInfo">
-      <h2>The New York Onion</h2>
-      <p class="summary">Juxtaposition of the New York Times and the Onion using a simple Markov chain and Beautiful Soup during Code Narratives at SFPC 2017.</p>
-      <a class="link" href="https://msbeethoven.github.io/newyorkonion.jpg" target="_blank">Take a Closer Look</a>
-      <a class="link" href="https://github.com/msbeethoven/newyorkonion" target="_blank">Github</a>
-      <p class="close">x</p>
-  </div>
-
-  <div class="clickBox" id="sweetdigsInfo">
-    <h2>Sweet Digs</h2>
-    <p class="summary"> Escape the encroaching Enviromulcher and build a new home! But home is where your stuff is, so grab as many of your hats as you can to your new home. Created during the 2019 Global Game Jam.</p>
-    <a class="link" href="https://msbeethoven.github.io/sweetdigs" target="_blank">Game</a>
-    <a class="link" href="https://pasty.itch.io/sweet-digs" target="_blank">Itch.io Version</a>
-    <a class="link" href="https://github.com/dornad/gamejam" target="_blank">Github</a>
-    <p class="close">x</p>
 </div>
 
-</body>
-
-<script src="tv.js"></script>
-
-</html>
+{%endblock bananas%}
